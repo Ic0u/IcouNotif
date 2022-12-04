@@ -1,0 +1,17 @@
+
+local start = tick()
+--//insert user interface library \\--------
+local NotifyLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ic0u/nofications-libraries/main/IcouNotif"))()
+
+--// create a notify frame //-------
+local Notify = NotifyLibrary.Notify --the notify frame , call a new variable yett
+
+---//example\\---
+
+Notify({
+     Title = "title",
+     Description = "icou-ware has been loaded in" .. tostring(tick() -start) .. "ms",
+     Duration = 3.2
+})
+
+
